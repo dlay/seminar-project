@@ -133,6 +133,7 @@ class DDPGAgent(object):
         actor_loss.backward()
         self.actor_optimizer.step()
 
+        '''
         writer.add_histogram('q', q, step)
         writer.add_histogram('q target', q_targets, step)
         writer.add_histogram('q next', q_next, step)
@@ -145,6 +146,7 @@ class DDPGAgent(object):
         writer.add_histogram('critic fc1 weight', self.critic_network.fc1.weight, step)
         writer.add_histogram('critic fc2 weight', self.critic_network.fc2.weight, step)
         writer.add_histogram('critic out weight', self.critic_network.out.weight, step)
+        '''
 
         # 10. Update weights
         self.update_target_networks()
