@@ -1,0 +1,6 @@
+numpy
+pandas
+pytorch
+torchvision
+pytorch-cuda=11.7
+tensorboard
