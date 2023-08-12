@@ -13,3 +13,7 @@ python main.py
 ```bash
 tensorboard --logsdir=logs
 ```
+
+### Example results
+HitRate@10 over episodes in training:
+</br><img src="img/hit_testrun.png" width="50%"/>
